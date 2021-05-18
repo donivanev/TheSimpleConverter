@@ -56,12 +56,12 @@
           <text value="TemperatureConverter"/>
         </properties>
       </component>
-      <component id="5ed5c" class="javax.swing.JRadioButton" binding="rockPaperScissorsRadioButton1" default-binding="true">
+      <component id="5ed5c" class="javax.swing.JRadioButton" binding="ticktacktoeRadioButton1">
         <constraints>
           <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Rock-Paper-Scissors"/>
+          <text value="Tick-Tack-Toe"/>
         </properties>
       </component>
       <component id="7dc2a" class="javax.swing.JLabel">

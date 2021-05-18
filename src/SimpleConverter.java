@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -12,7 +13,7 @@ public class SimpleConverter {
     private JRadioButton metricConverterRadioButton;
     private JRadioButton hashRadioButton;
     private JRadioButton temperatureConverterRadioButton;
-    private JRadioButton rockPaperScissorsRadioButton1;
+    private JRadioButton ticktacktoeRadioButton1;
 
     public SimpleConverter()
     {
@@ -20,25 +21,29 @@ public class SimpleConverter {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (currencyConverterRadioButton.isSelected()) {
-                    JFrame frame = new JFrame();
-                    frame.setSize(600, 500);
-                    frame.setVisible(true);
-                    //JPanel panel = new JPanel();
-                    //JTextField textField = new JTextField();
-                    //frame.add(textField);
-
+                    CurrencyForm c = new CurrencyForm();
+                    //JFrame frame = new JFrame(c);
+                    //frame.setSize(600, 500);
+                    //frame.setVisible(true);
+                    //JPanel p = new JPanel(c);
+                    //p.setVisible(true);
+                    c.show();
                 }
                 else if (temperatureConverterRadioButton.isSelected()) {
-
+                    TemperatureForm t = new TemperatureForm();
+                    t.show();
                 }
                 else if (metricConverterRadioButton.isSelected()) {
-
+                    MetricForm m = new MetricForm();
+                    m.show();
                 }
                 else if (BMICalculatorRadioButton.isSelected()) {
-
+                    BMIForm b = new BMIForm();
+                    b.show();
                 }
-                else if (rockPaperScissorsRadioButton1.isSelected()) {
-
+                else if (ticktacktoeRadioButton1.isSelected()) {
+                    TickTackToeForm t = new TickTackToeForm();
+                    t.show();
                 }
                 else { //hash
 

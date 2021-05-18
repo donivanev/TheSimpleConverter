@@ -79,6 +79,15 @@ public class TemperatureForm {
         });
     }
 
+    public void show() {
+        JFrame frame = new JFrame("Temperature1");
+        frame.setContentPane(new TemperatureForm().panel1);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setSize(600,500);
+        frame.setVisible(true);
+    }
+
     public static void main(String[] args) {
         JFrame frame = new JFrame("Temperature");
         frame.setContentPane(new TemperatureForm().panel1);
