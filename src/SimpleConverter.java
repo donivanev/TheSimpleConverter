@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -22,11 +21,6 @@ public class SimpleConverter {
             public void actionPerformed(ActionEvent e) {
                 if (currencyConverterRadioButton.isSelected()) {
                     CurrencyForm c = new CurrencyForm();
-                    //JFrame frame = new JFrame(c);
-                    //frame.setSize(600, 500);
-                    //frame.setVisible(true);
-                    //JPanel p = new JPanel(c);
-                    //p.setVisible(true);
                     c.show();
                 }
                 else if (temperatureConverterRadioButton.isSelected()) {
@@ -42,7 +36,7 @@ public class SimpleConverter {
                     b.show();
                 }
                 else if (ticktacktoeRadioButton1.isSelected()) {
-                    TickTackToeForm t = new TickTackToeForm();
+                    CalculatorForm t = new CalculatorForm();
                     t.show();
                 }
                 else { //hash
